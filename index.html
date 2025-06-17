@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binance Red Packet Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="tabs">
+    <button onclick="showTab('redpacket')">🎁 Red Packet</button>
+    <button onclick="showTab('invite')">👥 Invite</button>
+    <button onclick="showTab('task')">📋 Tasks</button>
+    <button onclick="showTab('wallet')">💼 Wallet</button>
+  </div>
+
+  <div id="redpacket" class="tab active">
+    <h2>🔴 Latest Red Packet Codes</h2>
+    <div class="code-box">Code: <b>BNCE-1234</b> <button onclick="copyCode('BNCE-1234')">Copy</button></div>
+  </div>
+
+  <div id="invite" class="tab">
+    <h2>👥 Invite & Earn</h2>
+    <p>Your Referral Link:</p>
+    <input type="text" value="https://t.me/BinanceRedPacketClaim_Bot?start=123456" id="refLink" readonly />
+    <button onclick="copyRef()">Copy Referral Link</button>
+    <p>🎯 Per Invite = 10 BTTC</p>
+  </div>
+
+  <div id="task" class="tab">
+    <h2>📋 Daily Tasks</h2>
+    <p>✅ Join Channels and Earn 10 BTTC</p>
+    <ul>
+      <li><a href="https://t.me/binance_red_packet_Codez" target="_blank">Join Channel 1</a></li>
+      <li><a href="https://t.me/binance_red_packet_codess" target="_blank">Join Channel 2</a></li>
+      <li><a href="https://t.me/binance_red_packet_codesss" target="_blank">Join Channel 3</a></li>
+    </ul>
+    <h3>🎰 Spin & Win</h3>
+    <a href="spin.html">Go to Spin</a><br />
+    <h3>📺 Watch Ads</h3>
+    <a href="ads.html">Watch Ads (Earn BTTC)</a>
+  </div>
+
+  <div id="wallet" class="tab">
+    <h2>💼 Your Wallet</h2>
+    <p>Total BTTC: <span id="balance">0</span></p>
+    <input type="text" placeholder="Enter BTTC Wallet Address" />
+    <button>Withdraw</button>
+    <p>⚠️ Minimum Withdraw: 1000 BTTC</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
